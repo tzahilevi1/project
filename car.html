@@ -320,32 +320,9 @@
     })();
     </script>
     <script>
-    /* Force UserWay accessibility button to bottom-right — aggressive fix */
-    (function(){
-        var SEL=['[id*="interdeal"]','[id*="userway"]','[class*="userway"]','[class*="interdeal"]'];
-        function applyFix(){
-            SEL.forEach(function(s){
-                document.querySelectorAll(s).forEach(function(el){
-                    var pos=window.getComputedStyle(el).position;
-                    if(pos==='fixed'||pos==='absolute'){
-                        el.style.cssText=el.style.cssText
-                            .replace(/\btop\s*:[^;!]+!?\s*important\s*;?/gi,'')
-                            .replace(/\btop\s*:[^;]+;?/gi,'');
-                        el.style.setProperty('top','auto','important');
-                        el.style.setProperty('bottom','24px','important');
-                        el.style.setProperty('transform','none','important');
-                    }
-                });
-            });
-        }
-        /* Run every 300ms for first 15s to catch UserWay resets */
-        var n=0,iv=setInterval(function(){applyFix();if(++n>50)clearInterval(iv);},300);
-        /* Also watch style/class attribute changes */
-        new MutationObserver(function(ms){
-            ms.forEach(function(m){if(m.type==='attributes')applyFix();});
-            applyFix();
-        }).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});
-    })();
+    /* Fix UserWay button to bottom-right — simple one-time fix */
+    function fixA11yBtn(){['[id*="interdeal"]','[id*="userway"]'].forEach(function(s){document.querySelectorAll(s).forEach(function(el){if(window.getComputedStyle(el).position==='fixed'){el.style.top='auto';el.style.bottom='24px';}});});}
+    setTimeout(fixA11yBtn,800);setTimeout(fixA11yBtn,2500);
     </script>
 </body>
 </html>
