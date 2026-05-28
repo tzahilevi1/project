@@ -8,18 +8,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1tVQsU_5z76XtxymGgR3vCvmz2nPqQ4TK">
     <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1tVQsU_5z76XtxymGgR3vCvmz2nPqQ4TK">
-    <link rel="preconnect" href="https://www.icar.co.il">
-    <link rel="preconnect" href="https://lh3.googleusercontent.com">
-    <link rel="dns-prefetch" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- Accessibility widget -->
-    <script>
-      window.interdeal = { sitekey: "foxmotors", Position: "right", domains: { js: "https://cdn.userway.org/" }, btnStyle: { vPosition: ["","24px"], scale: ["0.55","0.55"], color: { main: "#F07B00", second: "#FFFFFF" } } };
-      (function(n,s,c){var po=n.createElement(s);po.type="text/javascript";po.async=true;po.src=c+"widget.js";var sp=n.getElementsByTagName(s)[0];sp.parentNode.insertBefore(po,sp);}(document,"script","https://cdn.userway.org/"));
-    </script>
+    
 </head>
 <body>
 
@@ -57,14 +51,14 @@
         <div class="hero__bg"></div>
         <div class="hero__overlay"></div>
         <div class="container hero__content">
-            <p class="hero__tagline fade-up">מימון רכב חכם ומתקדם</p>
-            <h1 class="hero__title fade-up">הרכב הבא שלכם<br>מתחיל כאן</h1>
-            <p class="hero__subtitle fade-up">תנאי מימון מעולים, רכב בבעלותכם, ואפשרות החלפה נוחה —<br>הכל בשירות אישי ומקצועי</p>
-            <div class="hero__actions fade-up">
+            <p class="hero__tagline">מימון רכב חכם ומתקדם</p>
+            <h1 class="hero__title">הרכב הבא שלכם<br>מתחיל כאן</h1>
+            <p class="hero__subtitle">תנאי מימון מעולים, רכב בבעלותכם, ואפשרות החלפה נוחה —<br>הכל בשירות אישי ומקצועי</p>
+            <div class="hero__actions">
                 <a href="#contact" class="btn btn--primary">קבלו הצעה עכשיו</a>
                 <a href="#cars" class="btn btn--outline">הרכבים שלנו</a>
             </div>
-            <div class="hero__stats fade-up">
+            <div class="hero__stats">
                 <div class="hero__stat">
                     <div class="hero__stat-top">
                         <span class="hero__stat-number" data-target="500">0</span>
@@ -416,6 +410,9 @@
     </button>
 
     <script src="js/main.js"></script>
+<script defer>
+    window.addEventListener("load",function(){window.interdeal={sitekey:"foxmotors",Position:"right",domains:{js:"https://cdn.userway.org/"},btnStyle:{vPosition:["","24px"],scale:["0.55","0.55"],color:{main:"#F07B00",second:"#FFFFFF"}}};(function(n,s,c){var po=n.createElement(s);po.type="text/javascript";po.async=true;po.src=c+"widget.js";var sp=n.getElementsByTagName(s)[0];sp.parentNode.insertBefore(po,sp);}(document,"script","https://cdn.userway.org/"));});
+    </script>
     <script>
     /* Fix UserWay button to bottom-right — simple one-time fix */
     function fixA11yBtn(){['[id*="interdeal"]','[id*="userway"]'].forEach(function(s){document.querySelectorAll(s).forEach(function(el){if(window.getComputedStyle(el).position==='fixed'){el.style.top='auto';el.style.bottom='24px';}});});}
@@ -423,6 +420,7 @@
     </script>
 </body>
 </html>
+
 
 
 
