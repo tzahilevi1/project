@@ -320,28 +320,36 @@
     })();
     </script>
     <script>
-    /* Force accessibility widget to bottom-right */
+    /* Force UserWay accessibility button to bottom-right — aggressive fix */
     (function(){
-        function fix(){
-            var el=document.getElementById('interdeal-dynamic-accessibility-btn')||
-                   document.querySelector('[id*="interdeal-dynamic"]')||
-                   document.querySelector('[class*="userway-btn"]');
-            if(el){
-                el.style.setProperty('top','auto','important');
-                el.style.setProperty('bottom','24px','important');
-                el.style.setProperty('transform','none','important');
-                return true;
-            }
-            return false;
+        var SEL=['[id*="interdeal"]','[id*="userway"]','[class*="userway"]','[class*="interdeal"]'];
+        function applyFix(){
+            SEL.forEach(function(s){
+                document.querySelectorAll(s).forEach(function(el){
+                    var pos=window.getComputedStyle(el).position;
+                    if(pos==='fixed'||pos==='absolute'){
+                        el.style.cssText=el.style.cssText
+                            .replace(/\btop\s*:[^;!]+!?\s*important\s*;?/gi,'')
+                            .replace(/\btop\s*:[^;]+;?/gi,'');
+                        el.style.setProperty('top','auto','important');
+                        el.style.setProperty('bottom','24px','important');
+                        el.style.setProperty('transform','none','important');
+                    }
+                });
+            });
         }
-        if(!fix()){
-            var ob=new MutationObserver(function(){if(fix())ob.disconnect();});
-            ob.observe(document.body||document.documentElement,{childList:true,subtree:true});
-        }
+        /* Run every 300ms for first 15s to catch UserWay resets */
+        var n=0,iv=setInterval(function(){applyFix();if(++n>50)clearInterval(iv);},300);
+        /* Also watch style/class attribute changes */
+        new MutationObserver(function(ms){
+            ms.forEach(function(m){if(m.type==='attributes')applyFix();});
+            applyFix();
+        }).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});
     })();
     </script>
 </body>
 </html>
+
 
 
 

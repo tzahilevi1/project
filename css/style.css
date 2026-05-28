@@ -843,10 +843,13 @@ button { font-family: var(--font); }
 
 /* ---- UserWay Accessibility Button — force bottom-right ---- */
 #interdeal-dynamic-accessibility-btn,
-.interdeal-accessibility-btn,
-[id^="interdeal"],
-.userway-btn,
-#userway-btn {
+[id*="interdeal"],
+[id*="userway"],
+[class*="userway"],
+[style*="position: fixed"][id*="interdeal"],
+[style*="position:fixed"][id*="interdeal"],
+[style*="position: fixed"][id*="userway"],
+[style*="position:fixed"][id*="userway"] {
     top: auto !important;
     bottom: 24px !important;
     transform: none !important;
@@ -904,5 +907,6 @@ button { font-family: var(--font); }
     .banks__logos { gap: 10px; }
     .bank-logo { font-size: 12px; padding: 8px 14px; }
 }
+
 
 

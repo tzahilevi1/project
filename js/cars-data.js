@@ -24,7 +24,7 @@ const CARS = [
   { id:'byd-seal5', make:'BYD', model:'Seal 5 DM-i', nameHe:'ב.י.ד סיל 5 DM-i',
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:177384, monthlyFrom:1803, dpFrom:6900,
-    img: D('1kPkpEB30O8cROavJq5q3nL5Xbfuc8d8e') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/byd-seal-5-new.jpg',
     specs:{ engine:'1.5L DM-i + חשמלי', eRange:'100 ק"מ חשמלי', power:'218 כ"ס מערכת', accel:'7.9 שנ׳', trunk:'490 ל׳', fuel:'4.4 ל׳/100' },
     hi:['100 ק"מ בחשמל','טווח כולל 1200+ ק"מ','טעינה מהרשת','ADAS מתקדם'],
     variants:[
@@ -33,7 +33,7 @@ const CARS = [
   { id:'byd-seal-u', make:'BYD', model:'Seal U', nameHe:'ב.י.ד סיל יו',
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:202712, monthlyFrom:2074, dpFrom:14900,
-    img: D('1UffWCax2sd8f_HMD7cThOocEm_byMAiU') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/byd-seal-u-new.jpg',
     specs:{ engine:'1.5L PHEV', eRange:'80-100 ק"מ חשמלי', power:'240 כ"ס מערכת', accel:'6.9 שנ׳', trunk:'425 ל׳', fuel:'5.0 ל׳/100' },
     hi:['AWD זמין בגרסת Design','טעינה מהרשת','מסך 15.6″','6 כריות אוויר'],
     variants:[
@@ -44,7 +44,7 @@ const CARS = [
   { id:'byd-sealion5', make:'BYD', model:'Sealion 5', nameHe:'ב.י.ד סיליון 5',
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:169384, monthlyFrom:1717, dpFrom:14900,
-    img: D('13nsC9CglX6hatGuPkhmjjwwYAijoeCNy') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/byd-sealion-5-new.jpg',
     specs:{ engine:'1.5L DM-i', eRange:'100 ק"מ חשמלי', power:'218 כ"ס מערכת', accel:'7.8 שנ׳', trunk:'455 ל׳', fuel:'4.5 ל׳/100' },
     hi:['100 ק"מ בחשמל','עיצוב ספורטיבי','ADAS מלא','טעינה מהרשת'],
     variants:[
@@ -56,7 +56,7 @@ const CARS = [
   { id:'jaecoo-8', make:'Jaecoo', model:'8', nameHe:"ג'אקו 8",
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV גדול 7 מושבים', seats:7, year:2024,
     priceFrom:232712, monthlyFrom:2396, dpFrom:14900,
-    img: D('1macap1OIkisgmtQAnxEo3GuL2U4M47-Y') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/jaecoo-8-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'100 ק"מ חשמלי', power:'325 כ"ס מערכת', accel:'6.5 שנ׳', trunk:'255 ל׳ (3 שורות)', fuel:'5.5 ל׳/100' },
     hi:['7 מושבים','100 ק"מ בחשמל','מסך 14.6″ פנורמי','6 כריות אוויר + ADAS'],
     variants:[
@@ -66,7 +66,7 @@ const CARS = [
   { id:'jaecoo-7', make:'Jaecoo', model:'7', nameHe:"ג'אקו 7",
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:192712, monthlyFrom:1967, dpFrom:12900,
-    img: D('1n4pQd3licD3sYORWPtcfh-MzMZRuTK-2') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/jaecoo-7-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'100 ק"מ חשמלי', power:'290 כ"ס מערכת', accel:'6.9 שנ׳', trunk:'400 ל׳', fuel:'5.2 ל׳/100' },
     hi:['100 ק"מ בחשמל','מסך 14.6″','עיצוב ספורטיבי','ADAS מלא'],
     variants:[
@@ -76,7 +76,7 @@ const CARS = [
   { id:'jaecoo-5', make:'Jaecoo', model:'5', nameHe:"ג'אקו 5 היברידי",
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:156930, monthlyFrom:1583, dpFrom:12900,
-    img: D('1n4pQd3licD3sYORWPtcfh-MzMZRuTK-2') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/jaecoo-5-new.jpg',
     specs:{ engine:'1.5L HEV', power:'190 כ"ס מערכת', accel:'7.9 שנ׳', trunk:'420 ל׳', fuel:'5.5 ל׳/100', maxSpeed:'180 קמ"ש' },
     hi:['היברידי חסכוני','עיצוב מודרני','מסך 12.3″','6 כריות אוויר'],
     variants:[
@@ -86,7 +86,7 @@ const CARS = [
   { id:'jaecoo-5-ev', make:'Jaecoo', model:'5 EV', nameHe:"ג'אקו 5 חשמלי",
     type:'electric', typeHe:'חשמלי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:161796, monthlyFrom:1718, dpFrom:9900,
-    img: D('1n4pQd3licD3sYORWPtcfh-MzMZRuTK-2') || IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/jaecoo-5-new.jpg',
     specs:{ battery:'62 קוט"ש', range:'400+ ק"מ', power:'204 כ"ס', accel:'7.5 שנ׳', trunk:'420 ל׳', maxSpeed:'160 קמ"ש' },
     hi:['400+ ק"מ טווח','עיצוב ספורטיבי','ADAS מלא','טעינה מהירה DC'],
     variants:[
@@ -97,7 +97,7 @@ const CARS = [
   { id:'chery-tiggo4', make:'Chery', model:'Tiggo 4', nameHe:"צ'רי טיגו 4",
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:138697, monthlyFrom:1388, dpFrom:13900,
-    img: D('1KlZZHcEmQJptYgpCAo0LBy9D89_gFKCy') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/chery-tiggo-4-new.jpg',
     specs:{ engine:'1.5L HEV', power:'190 כ"ס מערכת', accel:'8.5 שנ׳', trunk:'385 ל׳', fuel:'5.5 ל׳/100', maxSpeed:'175 קמ"ש' },
     hi:['היברידי חסכוני','מסך 10.25″','6 כריות אוויר','ADAS'],
     variants:[
@@ -106,7 +106,7 @@ const CARS = [
   { id:'chery-tiggo7pro', make:'Chery', model:'Tiggo 7 Pro', nameHe:"צ'רי טיגו 7 פרו",
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:182384, monthlyFrom:1856, dpFrom:14900,
-    img: D('1pzM2zwt-FXsXQsBUmRzKLgkpmiypWk3D') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/chery-tiggo-7-pro-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'80 ק"מ חשמלי', power:'326 כ"ס מערכת', accel:'6.8 שנ׳', trunk:'432 ל׳', fuel:'5.0 ל׳/100' },
     hi:['80 ק"מ בחשמל','מסך 14.6″','עיצוב ספורטיבי','ADAS מלא'],
     variants:[
@@ -115,7 +115,7 @@ const CARS = [
   { id:'chery-tiggo8pro', make:'Chery', model:'Tiggo 8 Pro', nameHe:"צ'רי טיגו 8 פרו",
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV גדול 7 מושבים', seats:7, year:2024,
     priceFrom:202712, monthlyFrom:2074, dpFrom:14900,
-    img: D('1NXGiLo1IufJUxeye0dfPKYDS2RrapEgy') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/chery-tiggo-8-pro-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'80 ק"מ חשמלי', power:'326 כ"ס מערכת', accel:'7.0 שנ׳', trunk:'260 ל׳ (3 שורות)', fuel:'5.3 ל׳/100' },
     hi:['7 מושבים','80 ק"מ בחשמל','מסך 14.6″','ADAS מלא'],
     variants:[
@@ -124,7 +124,7 @@ const CARS = [
   { id:'chery-tiggo9pro', make:'Chery', model:'Tiggo 9 Pro', nameHe:"צ'רי טיגו 9 פרו",
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV גדול 7 מושבים', seats:7, year:2024,
     priceFrom:220712, monthlyFrom:2400, dpFrom:14900,
-    img: D('1MODonzGhx--aiMitKgQuXYs_QtjPKJbU') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/chery-tiggo-8-pro-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'100 ק"מ חשמלי', power:'340 כ"ס מערכת', accel:'6.5 שנ׳', trunk:'260 ל׳ (3 שורות)', fuel:'5.0 ל׳/100' },
     hi:['7 מושבים','100 ק"מ בחשמל','מסך 14.6″','עיצוב פרמיום'],
     variants:[
@@ -144,7 +144,7 @@ const CARS = [
   { id:'chery-fx', make:'Chery', model:'FX', nameHe:"צ'רי FX",
     type:'hybrid', typeHe:'היברידי', cat:'hatchback', catHe:'האצ׳בק', seats:5, year:2024,
     priceFrom:155020, monthlyFrom:1563, dpFrom:13900,
-    img: D('1VWfy9uJ72TytMzkkgKCTSW8BssersLfX') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/chery-fx-new.jpg',
     specs:{ engine:'1.5L HEV', power:'185 כ"ס מערכת', accel:'8.5 שנ׳', trunk:'310 ל׳', fuel:'4.8 ל׳/100', maxSpeed:'170 קמ"ש' },
     hi:['היברידי יעיל','מסך 10.25″','6 כריות אוויר','ADAS'],
     variants:[
@@ -155,7 +155,7 @@ const CARS = [
   { id:'hyundai-tucson', make:'Hyundai', model:'Tucson', nameHe:'יונדאי טוסון',
     type:'hybrid', typeHe:'היברידי / בנזין', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:191316, monthlyFrom:1835, dpFrom:5900,
-    img: D('1zt7VUL0q90e2JYtHlJhKlNznfe79d8Fg') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/hyundai-tucson-new.jpg',
     specs:{ engine:'1.6T בנזין / 1.6T היברידי', power:'160-230 כ"ס', accel:'8.5 שנ׳', trunk:'620 ל׳', fuel:'6.0-14.5 קמ"ל', maxSpeed:'185 קמ"ש' },
     hi:['5 כוכבי EuroNCAP','מסך 10.25″','7 כריות אוויר','חבילת ADAS'],
     variants:[
@@ -165,7 +165,7 @@ const CARS = [
   { id:'hyundai-venue', make:'Hyundai', model:'Venue', nameHe:'יונדאי וניו',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'קרוסאובר קומפקטי', seats:5, year:2024,
     priceFrom:131697, monthlyFrom:1290, dpFrom:12900,
-    img: D('1Le9rj_nfsaNGJdynBzFtFiKdRoqF1b0Z') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/hyundai-venue-new.jpg',
     specs:{ engine:'1.6L בנזין', power:'123 כ"ס', accel:'11.0 שנ׳', trunk:'355 ל׳', fuel:'13.0 קמ"ל', maxSpeed:'175 קמ"ש' },
     hi:['עיצוב עירוני','מסך 8.0″','6 כריות אוויר','חיסכון בדלק'],
     variants:[
@@ -174,7 +174,7 @@ const CARS = [
   { id:'hyundai-sonata', make:'Hyundai', model:'Sonata', nameHe:'יונדאי סונטה',
     type:'hybrid', typeHe:'היברידי', cat:'sedan', catHe:'סדאן', seats:5, year:2024,
     priceFrom:222712, monthlyFrom:2289, dpFrom:9900,
-    img: D('15I2W1amZ7shO_0O8R-c1fNQbTYui8YSk') || IMG.sedan,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/hyundai-sonata-new.jpg',
     specs:{ engine:'2.0L היברידי', power:'192 כ"ס מערכת', accel:'8.2 שנ׳', trunk:'510 ל׳', fuel:'17.5 קמ"ל', maxSpeed:'180 קמ"ש' },
     hi:['סדאן פרמיום','מסך 10.25″ + HUD','5 כוכבי EuroNCAP','8 כריות אוויר'],
     variants:[
@@ -184,7 +184,7 @@ const CARS = [
   { id:'hyundai-elantra', make:'Hyundai', model:'Elantra', nameHe:'יונדאי אלנטרה',
     type:'hybrid', typeHe:'היברידי', cat:'sedan', catHe:'סדאן', seats:5, year:2024,
     priceFrom:180384, monthlyFrom:1835, dpFrom:9900,
-    img: D('18mOwjvIw-ezVpL5tzjHfUs0TKQxGSvbb') || IMG.sedan,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/hyundai-elantra-new.jpg',
     specs:{ engine:'1.6L היברידי', power:'141 כ"ס מערכת', accel:'9.3 שנ׳', trunk:'474 ל׳', fuel:'21.0 קמ"ל', maxSpeed:'175 קמ"ש' },
     hi:['היברידי יעיל מאוד','מסך 10.25″','5 כוכבי EuroNCAP','8 כריות אוויר'],
     variants:[
@@ -193,7 +193,7 @@ const CARS = [
   { id:'hyundai-kona', make:'Hyundai', model:'Kona', nameHe:'יונדאי קונה',
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:179384, monthlyFrom:1824, dpFrom:6900,
-    img: D('1YDg8WmbqnVUFBNii2wkAalWmDwFJrmYu') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/hyundai-kona-new.jpg',
     specs:{ engine:'1.6T היברידי', power:'141 כ"ס מערכת', accel:'9.5 שנ׳', trunk:'374 ל׳', fuel:'18.0 קמ"ל', maxSpeed:'175 קמ"ש' },
     hi:['היברידי חסכוני','מסך 10.25″','עיצוב מודרני','ADAS מלא'],
     variants:[
@@ -204,7 +204,7 @@ const CARS = [
   { id:'toyota-corolla-cross', make:'Toyota', model:'Corolla Cross', nameHe:'טויוטה קורולה קרוס',
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:182384, monthlyFrom:1856, dpFrom:12900,
-    img: D('1VuA2tx9rTBzUR8ocSRt4BFAfTmYoiPSJ') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/toyota-corolla-cross-new.jpg',
     specs:{ engine:'1.8L HSD היברידי', power:'122 כ"ס מערכת', accel:'10.0 שנ׳', trunk:'440 ל׳', fuel:'20+ קמ"ל', maxSpeed:'170 קמ"ש' },
     hi:['אמינות טויוטה','20+ קמ"ל','מסך 9.0″','7 כריות אוויר'],
     notes:'החכר',
@@ -214,7 +214,7 @@ const CARS = [
   { id:'toyota-yaris-cross', make:'Toyota', model:'Yaris Cross', nameHe:'טויוטה יאריס קרוס',
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר קומפקטי', seats:5, year:2024,
     priceFrom:161020, monthlyFrom:1627, dpFrom:8900,
-    img: D('1C4kby5N2P7-AW05m2sF7XhJVp5NTuoCV') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/toyota-yaris-cross-new.jpg',
     specs:{ engine:'1.5L HSD היברידי', power:'116 כ"ס מערכת', accel:'11.0 שנ׳', trunk:'270 ל׳', fuel:'22+ קמ"ל', maxSpeed:'170 קמ"ש' },
     hi:['22+ קמ"ל','עיצוב ספורטיבי','מסך 9.0″','6 כריות אוויר'],
     variants:[
@@ -224,7 +224,7 @@ const CARS = [
   { id:'toyota-yaris', make:'Toyota', model:'Yaris', nameHe:'טויוטה יאריס',
     type:'hybrid', typeHe:'היברידי', cat:'hatchback', catHe:'האצ׳בק', seats:5, year:2024,
     priceFrom:151930, monthlyFrom:1530, dpFrom:6900,
-    img: D('18FgUTgkADpr8KgmMWcuxSXCP9iUnXsF_') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/toyota-yaris-new.jpg',
     specs:{ engine:'1.5L HSD היברידי', power:'116 כ"ס מערכת', accel:'11.5 שנ׳', trunk:'286 ל׳', fuel:'22+ קמ"ל', maxSpeed:'165 קמ"ש' },
     hi:['22+ קמ"ל','רכב עירוני מושלם','אמינות טויוטה','מסך 9.0″'],
     notes:'יבוא מקביל',
@@ -234,7 +234,7 @@ const CARS = [
   { id:'toyota-chr', make:'Toyota', model:'C-HR', nameHe:'טויוטה C-HR',
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר קופה', seats:5, year:2024,
     priceFrom:196622, monthlyFrom:1952, dpFrom:6900,
-    img: D('1-piDTKZKKy7nqVikFq3ZBLutZeZGhC7L') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/toyota-c-hr-new.jpg',
     specs:{ engine:'2.0L HSD היברידי', power:'196 כ"ס מערכת', accel:'8.2 שנ׳', trunk:'388 ל׳', fuel:'19+ קמ"ל', maxSpeed:'180 קמ"ש' },
     hi:['עיצוב קופה ייחודי','19+ קמ"ל','מסך 12.3″','ADAS מלא'],
     variants:[
@@ -245,7 +245,7 @@ const CARS = [
   { id:'leapmotor-c10', make:'Leapmotor', model:'C10', nameHe:'ליפמוטור C10',
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:187622, monthlyFrom:1912, dpFrom:6900,
-    img: D('1W02IVvJdTX8_6tvwMPveAPEwZ1MZGy6E') || IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/leapmotor-c10-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'120 ק"מ חשמלי', power:'326 כ"ס מערכת', accel:'6.5 שנ׳', trunk:'422 ל׳', fuel:'5.5 ל׳/100' },
     hi:['120 ק"מ בחשמל','מסך 14.6″','עיצוב מינימליסטי','ADAS מתקדם'],
     variants:[
@@ -257,7 +257,7 @@ const CARS = [
   { id:'kia-seltos', make:'Kia', model:'Seltos', nameHe:'קיה סלטוס',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:167294, monthlyFrom:1694, dpFrom:5900,
-    img: D('1Ianoo6tBprt8Diu9TvWV8pzezcRQtfbW') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/kia-seltos-new.jpg',
     specs:{ engine:'2.0L MPI', power:'149 כ"ס', accel:'10.0 שנ׳', trunk:'433 ל׳', fuel:'12.5 קמ"ל', maxSpeed:'175 קמ"ש' },
     hi:['5 כוכבי NCAP','מסך 10.25″','6 כריות אוויר','בלימת חירום אוטונומית'],
     variants:[
@@ -266,7 +266,7 @@ const CARS = [
   { id:'kia-sportage', make:'Kia', model:'Sportage', nameHe:"קיה ספורטאז'",
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:179900, salePrice:179900, monthlyFrom:1763, dpFrom:7900,
-    img: D('1af6Z5bq9yGaP0DWoG69jNgCuf4oTNbiS') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/kia-sportage-new.jpg',
     specs:{ engine:'1.6T בנזין', power:'180 כ"ס', accel:'8.5 שנ׳', trunk:'587 ל׳', fuel:'12.0 קמ"ל', maxSpeed:'185 קמ"ש' },
     hi:['5 כוכבי EuroNCAP','מסך 12.3″','8 כריות אוויר','ADAS מלא'],
     variants:[
@@ -275,7 +275,7 @@ const CARS = [
   { id:'kia-picanto', make:'Kia', model:'Picanto', nameHe:'קיה פיקנטו',
     type:'benzin', typeHe:'בנזין', cat:'hatchback', catHe:'רכב עירוני', seats:5, year:2024,
     priceFrom:111272, monthlyFrom:1094, dpFrom:9900,
-    img: D('1EfCLf6gc8-Df1y49jSbZfACoexKTOQ1W') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/kia-picanto-new.jpg',
     specs:{ engine:'1.2L MPI', power:'84 כ"ס', accel:'12.5 שנ׳', trunk:'255 ל׳', fuel:'15.0 קמ"ל', maxSpeed:'160 קמ"ש' },
     hi:['רכב עירוני חסכוני','קל לחנייה','מסך 8.0″','6 כריות אוויר'],
     variants:[
@@ -284,7 +284,7 @@ const CARS = [
   { id:'kia-niro', make:'Kia', model:'Niro', nameHe:'קיה נירו',
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:181294, monthlyFrom:1845, dpFrom:14900,
-    img: D('1myyM89Y1iuq8GaNdA1E1fZiy5E_mqGzD') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/kia-niro-new.jpg',
     specs:{ engine:'1.5L HEV', power:'141 כ"ס מערכת', accel:'9.8 שנ׳', trunk:'451 ל׳', fuel:'20+ קמ"ל', maxSpeed:'170 קמ"ש' },
     hi:['20+ קמ"ל','5 כוכבי EuroNCAP','מסך 10.25″','ADAS מלא'],
     variants:[
@@ -295,7 +295,7 @@ const CARS = [
   { id:'mitsubishi-eclipse', make:'Mitsubishi', model:'Eclipse Cross', nameHe:'מיצובישי אקליפס קרוס',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'קרוסאובר קופה', seats:5, year:2024,
     priceFrom:167384, monthlyFrom:1695, dpFrom:14900,
-    img: D('1iRGkK_AmdmUbZDTfZntb9mkjGAK5Y8eW') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mitsubishi-eclipse-cross-new.jpg',
     specs:{ engine:'1.5T בנזין', power:'163 כ"ס', accel:'9.5 שנ׳', trunk:'341 ל׳', fuel:'11.5 קמ"ל', maxSpeed:'185 קמ"ש' },
     hi:['עיצוב קופה ייחודי','מסך 10.8″ 2 חלקים','S-AWC 4x4 זמין','7 כריות אוויר'],
     variants:[
@@ -304,7 +304,7 @@ const CARS = [
   { id:'mitsubishi-outlander', make:'Mitsubishi', model:'Outlander', nameHe:'מיצובישי אאוטלנדר',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV גדול', seats:7, year:2024,
     priceFrom:207712, monthlyFrom:2128, dpFrom:16900,
-    img: D('1QQLrQTp-uhGDqiSN2166RbM0PgRBsrH4') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mitsubishi-outlander-new.jpg',
     specs:{ engine:'2.5L MIVEC', power:'181 כ"ס', accel:'10.0 שנ׳', trunk:'310 ל׳ (3 שורות)', fuel:'10.5 קמ"ל', maxSpeed:'180 קמ"ש' },
     hi:['7 מושבים','S-AWC 4x4','מסך 12.3″','8 כריות אוויר'],
     variants:[
@@ -325,7 +325,7 @@ const CARS = [
   { id:'mg-hs', make:'MG', model:'HS', nameHe:"אמ.ג'י HS",
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:179610, monthlyFrom:1827, dpFrom:9900,
-    img: IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mg-hs-new.jpg',
     specs:{ engine:'1.5T Hybrid+', power:'230 כ"ס מערכת', accel:'7.5 שנ׳', trunk:'507 ל׳', fuel:'7.5 ל׳/100', maxSpeed:'185 קמ"ש' },
     hi:['מסך 12.3″','8 כריות אוויר','panoramic roof','ADAS מלא'],
     variants:[
@@ -334,7 +334,7 @@ const CARS = [
   { id:'mg-zs', make:'MG', model:'ZS', nameHe:"אמ.ג'י ZS",
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר', seats:5, year:2024,
     priceFrom:157918, monthlyFrom:1594, dpFrom:13900,
-    img: D('1m2oTEU7x4bAwoJJnmjdg6Pk1NrEGLeQ7') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mg-zs-new.jpg',
     specs:{ engine:'1.5L HEV', power:'190 כ"ס מערכת', accel:'8.5 שנ׳', trunk:'448 ל׳', fuel:'6.5 ל׳/100', maxSpeed:'175 קמ"ש' },
     hi:['היברידי חסכוני','מסך 10.1″','6 כריות אוויר','ADAS'],
     variants:[
@@ -343,7 +343,7 @@ const CARS = [
   { id:'mg-3', make:'MG', model:'3', nameHe:"אמ.ג'י 3",
     type:'hybrid', typeHe:'היברידי', cat:'hatchback', catHe:'האצ׳בק', seats:5, year:2024,
     priceFrom:129595, monthlyFrom:1290, dpFrom:12900,
-    img: D('1Ianoo6tBprt8Diu9TvWV8pzezcRQtfbW') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mg-3-new.jpg',
     specs:{ engine:'1.5L HEV', power:'180 כ"ס מערכת', accel:'9.0 שנ׳', trunk:'293 ל׳', fuel:'6.0 ל׳/100', maxSpeed:'170 קמ"ש' },
     hi:['היברידי יעיל','רכב עירוני','מסך 10.25″','6 כריות אוויר'],
     variants:[
@@ -352,7 +352,7 @@ const CARS = [
   { id:'mg-s9', make:'MG', model:'S9', nameHe:"אמ.ג'י S9",
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV גדול 7 מושבים', seats:7, year:2024,
     priceFrom:192610, monthlyFrom:1990, dpFrom:14900,
-    img: IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mg-s9-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'100 ק"מ חשמלי', power:'350 כ"ס מערכת', accel:'6.5 שנ׳', trunk:'265 ל׳ (3 שורות)', fuel:'6.0 ל׳/100' },
     hi:['7 מושבים','100 ק"מ בחשמל','מסך 14.6″','ADAS מלא'],
     variants:[
@@ -363,7 +363,7 @@ const CARS = [
   { id:'skoda-superb', make:'Škoda', model:'Superb', nameHe:'סקודה סופרב',
     type:'benzin', typeHe:'בנזין', cat:'sedan', catHe:'סדאן/קומבי גדול', seats:5, year:2024,
     priceFrom:288296, monthlyFrom:2992, dpFrom:9900,
-    img: IMG.sedan,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/skoda-superb-new.jpg',
     specs:{ engine:'2.0T TSI', power:'265 כ"ס', accel:'6.5 שנ׳', trunk:'645 ל׳ (קומבי)', fuel:'8.5 ל׳/100', maxSpeed:'250 קמ"ש (מוגבל)' },
     hi:['4x4 4Motion','645 ל׳ תא מטען (קומבי)','מסך 12.9″ Cantate','8 כריות אוויר'],
     variants:[
@@ -372,7 +372,7 @@ const CARS = [
   { id:'skoda-kamiq', make:'Škoda', model:'Kamiq', nameHe:'סקודה קאמיק',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'קרוסאובר קומפקטי', seats:5, year:2024,
     priceFrom:144520, monthlyFrom:1450, dpFrom:14900,
-    img: D('1pGpZacpTkVE-bRrCb-l3cSdpvDBcC4KB') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/skoda-kamiq-new.jpg',
     specs:{ engine:'1.0T TSI', power:'115 כ"ס', accel:'10.5 שנ׳', trunk:'400 ל׳', fuel:'13.0 קמ"ל', maxSpeed:'185 קמ"ש' },
     hi:['Simply Clever','מסך 9.2″','6 כריות אוויר','קל לנהיגה עירונית'],
     variants:[
@@ -381,7 +381,7 @@ const CARS = [
   { id:'skoda-octavia', make:'Škoda', model:'Octavia', nameHe:'סקודה אוקטביה',
     type:'benzin', typeHe:'בנזין', cat:'sedan', catHe:'סדאן', seats:5, year:2024,
     priceFrom:167316, monthlyFrom:1695, dpFrom:15900,
-    img: D('1PTKBDtln1RtSN4xWp8LwYm_HPwIZHm5L') || IMG.sedan,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/skoda-octavia-new.jpg',
     specs:{ engine:'1.5T TSI', power:'150 כ"ס', accel:'8.6 שנ׳', trunk:'600 ל׳', fuel:'13.0 קמ"ל', maxSpeed:'220 קמ"ש' },
     hi:['600 ל׳ תא מטען','מסך 10.0″','6 כריות אוויר','Simply Clever'],
     variants:[
@@ -392,7 +392,7 @@ const CARS = [
   { id:'kgm-rexton', make:'KGM', model:'Rexton', nameHe:'קיי.ג׳י.אם רקסטון',
     type:'diesel', typeHe:'דיזל', cat:'suv', catHe:'SUV גדול 7 מושבים', seats:7, year:2024,
     priceFrom:222712, monthlyFrom:2289, dpFrom:14900,
-    img: D('1-ZNTuZw8TnbhUFrv_3cAdYgBmuQIUdw1') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/kgm-rexton-new.jpg',
     specs:{ engine:'2.2L Diesel', power:'181 כ"ס', accel:'10.5 שנ׳', trunk:'820 ל׳ (5 מושבים)', fuel:'10.5 קמ"ל', maxSpeed:'180 קמ"ש' },
     hi:['7 מושבים','AWD מלא','מסך 12.3″','820 ל׳ תא מטען'],
     variants:[
@@ -403,7 +403,7 @@ const CARS = [
   { id:'avatr-11', make:'Avatr', model:'11', nameHe:'אווטר 11',
     type:'electric', typeHe:'חשמלי', cat:'suv', catHe:'SUV פרמיום', seats:5, year:2024,
     priceFrom:293706, monthlyFrom:3050, dpFrom:9900,
-    img: D('14v_XwL1uZl-oYaJ5IW0ct7lUsFD8Y4Gy') || IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/avatr-11-new.jpg',
     specs:{ battery:'90 קוט"ש', range:'600+ ק"מ', power:'578 כ"ס (Dual Motor)', accel:'3.98 שנ׳', trunk:'490 ל׳', maxSpeed:'200 קמ"ש' },
     hi:['Huawei Smart Tech','600+ ק"מ טווח','0-100 ב-3.98 שנ׳','Lidar מובנה'],
     variants:[
@@ -414,7 +414,7 @@ const CARS = [
   { id:'nissan-juke', make:'Nissan', model:'Juke', nameHe:"ניסאן ג'וק",
     type:'hybrid', typeHe:'היברידי', cat:'suv', catHe:'קרוסאובר קומפקטי', seats:5, year:2024,
     priceFrom:163020, monthlyFrom:1649, dpFrom:14900,
-    img: D('19io1cMbTiIPlRCyFWUf_Wtz3_K8of-NR') || IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/nissan-juke-new.jpg',
     specs:{ engine:'1.0T Hybrid', power:'143 כ"ס מערכת', accel:'9.0 שנ׳', trunk:'422 ל׳', fuel:'17.5 קמ"ל', maxSpeed:'175 קמ"ש' },
     hi:['היברידי יעיל','עיצוב ייחודי','מסך 8.0″','6 כריות אוויר'],
     variants:[
@@ -423,7 +423,7 @@ const CARS = [
   { id:'nissan-qashqai', make:'Nissan', model:'Qashqai', nameHe:'ניסאן קשקאי',
     type:'hybrid', typeHe:'מיילד היברידי', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:183874, salePrice:183874, monthlyFrom:1890, dpFrom:0,
-    img: IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/nissan-qashqai-new.jpg',
     specs:{ engine:'1.3T Mild Hybrid', power:'158 כ"ס', accel:'9.0 שנ׳', trunk:'504 ל׳', fuel:'13.5 קמ"ל', maxSpeed:'190 קמ"ש' },
     hi:['ProPILOT נהיגה חצי-אוטונומית','מסך 12.3″','360° מצלמה','8 כריות אוויר'],
     variants:[
@@ -434,7 +434,7 @@ const CARS = [
   { id:'seat-arona', make:'SEAT', model:'Arona', nameHe:'סיאט ארונה',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'קרוסאובר קומפקטי', seats:5, year:2024,
     priceFrom:134607, monthlyFrom:1344, dpFrom:9900,
-    img: IMG.compact,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/seat-arona-new.jpg',
     specs:{ engine:'1.0T TSI', power:'115 כ"ס', accel:'10.5 שנ׳', trunk:'400 ל׳', fuel:'13.0 קמ"ל', maxSpeed:'185 קמ"ש' },
     hi:['עיצוב ספרדי','מסך 9.2″','6 כריות אוויר','Connectivity Plus'],
     variants:[
@@ -445,7 +445,7 @@ const CARS = [
   { id:'citroen-berlingo', make:'Citroën', model:'Berlingo', nameHe:'סיטרואן ברלינגו',
     type:'diesel', typeHe:'דיזל', cat:'minivan', catHe:'מיניוואן', seats:5, year:2024,
     priceFrom:179384, monthlyFrom:1827, dpFrom:15900,
-    img: D('1zl17AWHVllkNWWUvHM1n1Iiq02phoAcI') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/citroen-berlingo-new.jpg',
     specs:{ engine:'1.5L BlueHDi Diesel', power:'130 כ"ס', accel:'11.0 שנ׳', trunk:'775 ל׳', fuel:'16.0 קמ"ל', maxSpeed:'185 קמ"ש' },
     hi:['775 ל׳ תא מטען','גג פנורמי','מסך 10.0″','נוחות משפחתית'],
     variants:[
@@ -456,7 +456,7 @@ const CARS = [
   { id:'omoda-7', make:'Omoda', model:'7', nameHe:'אומודה 7',
     type:'phev', typeHe:'פלאג-אין היברידי', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:192622, monthlyFrom:1990, dpFrom:14900,
-    img: D('1JJu52X65dQOVa8O1zTZBd1Av8HPcf2_t') || IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/omoda-7-new.jpg',
     specs:{ engine:'1.5T PHEV', eRange:'100 ק"מ חשמלי', power:'326 כ"ס מערכת', accel:'6.8 שנ׳', trunk:'420 ל׳', fuel:'5.2 ל׳/100' },
     hi:['100 ק"מ בחשמל','עיצוב ספורטיבי','מסך 14.6″','ADAS מתקדם'],
     variants:[
@@ -467,7 +467,7 @@ const CARS = [
   { id:'chevrolet-silverado-ev', make:'Chevrolet', model:'Silverado EV', nameHe:'שברולט סילברדו EV',
     type:'electric', typeHe:'חשמלי', cat:'pickup', catHe:'פיקאפ חשמלי', seats:5, year:2024,
     priceFrom:320000, monthlyFrom:2138, dpFrom:24900,
-    img: D('1qZXY8QskfqjyW--cLZ91UP_s1okvvWal') || IMG.pickup,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/chevrolet-silverado-ev-new.jpg',
     specs:{ battery:'200 קוט"ש', range:'640 ק"מ', power:'664 כ"ס (WT)', accel:'4.5 שנ׳', payload:'1800 ק"ג', towing:'10,000 ק"ג' },
     hi:['640 ק"מ טווח','טעינה 19.2kW AC','Multi-Flex Midgate','Super Cruise'],
     notes:'מחיר לא כולל מע"מ',
@@ -496,7 +496,7 @@ const CARS = [
   { id:'bmw-x1', make:'BMW', model:'X1', nameHe:'ב.מ.וו X1',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV קומפקטי פרמיום', seats:5, year:2024,
     priceFrom:299900, salePrice:299900, monthlyFrom:2890, dpFrom:6900,
-    img: IMG.bmw,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/bmw-x1-new.jpg',
     specs:{ engine:'2.0T TwinPower', power:'204 כ"ס', accel:'7.4 שנ׳', trunk:'540 ל׳', fuel:'7.8 ל׳/100', maxSpeed:'230 קמ"ש (מוגבל)' },
     hi:['BMW iDrive 8','מסך 10.25″','5 כוכבי EuroNCAP','M אביזרי ספורט'],
     variants:[
@@ -506,7 +506,7 @@ const CARS = [
   { id:'bmw-ix1', make:'BMW', model:'iX1', nameHe:'ב.מ.וו iX1',
     type:'electric', typeHe:'חשמלי', cat:'suv', catHe:'SUV קומפקטי חשמלי פרמיום', seats:5, year:2025,
     priceFrom:320000, salePrice:320000, monthlyFrom:2990, dpFrom:0,
-    img: IMG.bmw,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/bmw-ix1-new.jpg',
     specs:{ battery:'66.5 קוט"ש', range:'440 ק"מ', power:'313 כ"ס', accel:'5.6 שנ׳', trunk:'490 ל׳', maxSpeed:'180 קמ"ש' },
     hi:['BMW iDrive 8','440 ק"מ טווח','xDrive חשמלי','BMW Curved Display'],
     variants:[
@@ -515,7 +515,7 @@ const CARS = [
   { id:'bmw-x2', make:'BMW', model:'X2', nameHe:'ב.מ.וו X2',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'קרוסאובר קופה פרמיום', seats:5, year:2024,
     priceFrom:330000, monthlyFrom:3290, dpFrom:9900,
-    img: IMG.bmw,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/bmw-x2-new.jpg',
     specs:{ engine:'2.0T TwinPower', power:'204 כ"ס', accel:'7.3 שנ׳', trunk:'560 ל׳', fuel:'7.5 ל׳/100', maxSpeed:'230 קמ"ש (מוגבל)' },
     hi:['BMW Curved Display','M Sport חבילה','xDrive AWD','5 כוכבי EuroNCAP'],
     variants:[
@@ -524,7 +524,7 @@ const CARS = [
   { id:'bmw-x4', make:'BMW', model:'X4', nameHe:'ב.מ.וו X4',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV קופה פרמיום', seats:5, year:2024,
     priceFrom:469000, salePrice:469000, monthlyFrom:4790, dpFrom:0,
-    img: IMG.bmw,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/bmw-x4-new.jpg',
     specs:{ engine:'2.0T TwinPower', power:'245 כ"ס', accel:'6.3 שנ׳', trunk:'525 ל׳', fuel:'8.0 ל׳/100', maxSpeed:'240 קמ"ש (מוגבל)' },
     hi:['BMW iDrive 8','M Sport Package','xDrive AWD','BMW Curved Display'],
     variants:[
@@ -533,7 +533,7 @@ const CARS = [
   { id:'bmw-x5', make:'BMW', model:'X5', nameHe:'ב.מ.וו X5',
     type:'diesel', typeHe:'דיזל', cat:'suv', catHe:'SUV גדול פרמיום', seats:5, year:2024,
     priceFrom:711000, monthlyFrom:7398, dpFrom:0,
-    img: IMG.bmw,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/bmw-x5-new.jpg',
     specs:{ engine:'3.0L Diesel TwinPower', power:'286 כ"ס', accel:'6.0 שנ׳', trunk:'650 ל׳', fuel:'10.0 קמ"ל', maxSpeed:'240 קמ"ש (מוגבל)' },
     hi:['BMW iDrive 8','xDrive AWD','Panoramic Sky Lounge','Air Suspension'],
     variants:[
@@ -572,7 +572,7 @@ const CARS = [
   { id:'mazda-cx5', make:'Mazda', model:'CX-5', nameHe:'מאזדה CX-5',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV בינוני', seats:5, year:2024,
     priceFrom:197000, monthlyFrom:2013, dpFrom:9900,
-    img: IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mazda-cx-5-new.jpg',
     specs:{ engine:'2.5L SkyActiv-G', power:'194 כ"ס', accel:'8.0 שנ׳', trunk:'442 ל׳', fuel:'11.0 קמ"ל', maxSpeed:'200 קמ"ש' },
     hi:['עיצוב Kodo יוקרתי','מסך 10.25″','i-Activsense ADAS','7 כריות אוויר'],
     variants:[
@@ -583,7 +583,7 @@ const CARS = [
   { id:'zeekr-x', make:'ZEEKR', model:'X', nameHe:'זיקר X',
     type:'electric', typeHe:'חשמלי', cat:'suv', catHe:'קרוסאובר חשמלי', seats:5, year:2024,
     priceFrom:189384, monthlyFrom:1931, dpFrom:9900,
-    img: IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/zeekr-x-new.jpg',
     specs:{ battery:'66 קוט"ש', range:'440 ק"מ', power:'272 כ"ס', accel:'5.6 שנ׳', trunk:'362 ל׳', maxSpeed:'180 קמ"ש' },
     hi:['440 ק"מ טווח','Flyme Auto','Zeekr Care','800V חשמל מהיר'],
     variants:[
@@ -592,7 +592,7 @@ const CARS = [
   { id:'zeekr-001', make:'ZEEKR', model:'001', nameHe:'זיקר 001',
     type:'electric', typeHe:'חשמלי', cat:'sedan', catHe:'לייפטבק חשמלי', seats:5, year:2024,
     priceFrom:294000, monthlyFrom:3054, dpFrom:9900,
-    img: IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/zeekr-001-new.jpg',
     specs:{ battery:'100 קוט"ש', range:'750 ק"מ (LR)', power:'544 כ"ס', accel:'3.8 שנ׳', trunk:'476 ל׳', maxSpeed:'200 קמ"ש' },
     hi:['750 ק"מ טווח (LR)','0-100 ב-3.8 שנ׳','800V טעינה מהירה','ריפוד Nappa'],
     variants:[
@@ -602,7 +602,7 @@ const CARS = [
   { id:'zeekr-7x', make:'ZEEKR', model:'7X', nameHe:'זיקר 7X',
     type:'electric', typeHe:'חשמלי', cat:'suv', catHe:'SUV חשמלי', seats:5, year:2024,
     priceFrom:237000, monthlyFrom:2442, dpFrom:14900,
-    img: IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/zeekr-7x-new.jpg',
     specs:{ battery:'100 קוט"ש', range:'600+ ק"מ', power:'476 כ"ס (AWD)', accel:'3.8 שנ׳', trunk:'616 ל׳', maxSpeed:'200 קמ"ש' },
     hi:['600+ ק"מ טווח','0-100 ב-3.8 שנ׳','616 ל׳ תא מטען','800V טעינה מהירה'],
     variants:[
@@ -615,7 +615,7 @@ const CARS = [
   { id:'subaru-crosstrek', make:'Subaru', model:'Crosstrek', nameHe:'סובארו קרוסטרק',
     type:'benzin', typeHe:'בנזין + AWD', cat:'suv', catHe:'קרוסאובר AWD', seats:5, year:2024,
     priceFrom:179294, monthlyFrom:1823, dpFrom:9900,
-    img: IMG.suv,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/subaru-crosstrek-new.jpg',
     specs:{ engine:'2.0L Boxer', power:'154 כ"ס', accel:'9.8 שנ׳', trunk:'385 ל׳', fuel:'11.5 קמ"ל', maxSpeed:'180 קמ"ש' },
     hi:['Symmetrical AWD קבוע','X-Mode שטח','EyeSight ADAS','כושר מעבר גבוה'],
     variants:[
@@ -626,7 +626,7 @@ const CARS = [
   { id:'mercedes-gla200', make:'Mercedes', model:'GLA 200', nameHe:'מרצדס GLA 200',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV קומפקטי פרמיום', seats:5, year:2024,
     priceFrom:365000, monthlyFrom:3699, dpFrom:0,
-    img: 'https://images.unsplash.com/photo-1570733577524-3a047079e80d?auto=format&fit=crop&w=900&q=85',
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mercedes-gla-new.jpg',
     specs:{ engine:'1.3T M282', power:'163 כ"ס', accel:'8.7 שנ׳', trunk:'435 ל׳', fuel:'7.5 ל׳/100', maxSpeed:'230 קמ"ש (מוגבל)' },
     hi:['MBUX Voice Assistant','מסך 10.25″ + 10.25″','AMG Line זמין','5 כוכבי EuroNCAP'],
     variants:[
@@ -635,7 +635,7 @@ const CARS = [
   { id:'mercedes-glc200', make:'Mercedes', model:'GLC 200', nameHe:'מרצדס GLC 200',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV בינוני פרמיום', seats:5, year:2024,
     priceFrom:479000, salePrice:479000, monthlyFrom:4806, dpFrom:0,
-    img: 'https://images.unsplash.com/photo-1616788494672-ec7ca25fdda9?auto=format&fit=crop&w=900&q=85',
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mercedes-glc-new.jpg',
     specs:{ engine:'2.0T M254', power:'204 כ"ס', accel:'7.5 שנ׳', trunk:'575 ל׳', fuel:'7.8 ל׳/100', maxSpeed:'234 קמ"ש (מוגבל)' },
     hi:['MBUX Superscreen','4MATIC AWD זמין','AMG Line','5 כוכבי EuroNCAP'],
     notes:'אספקה יוני-יולי',
@@ -645,7 +645,7 @@ const CARS = [
   { id:'mercedes-glc300-coupe', make:'Mercedes', model:'GLC 300 Coupé', nameHe:'מרצדס GLC 300 קופה',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV קופה פרמיום', seats:5, year:2024,
     priceFrom:559000, monthlyFrom:5724, dpFrom:0,
-    img: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=85',
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mercedes-glc-new.jpg',
     specs:{ engine:'2.0T M254', power:'258 כ"ס', accel:'6.4 שנ׳', trunk:'510 ל׳', fuel:'8.5 ל׳/100', maxSpeed:'240 קמ"ש (מוגבל)' },
     hi:['AMG Line','MBUX 12.3″ Dual','4MATIC xDrive','Burmester Audio'],
     variants:[
@@ -654,7 +654,7 @@ const CARS = [
   { id:'mercedes-cla200', make:'Mercedes', model:'CLA 200', nameHe:'מרצדס CLA 200',
     type:'benzin', typeHe:'בנזין', cat:'sedan', catHe:'סדאן קופה פרמיום', seats:5, year:2024,
     priceFrom:409900, salePrice:409900, monthlyFrom:3999, dpFrom:0,
-    img: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=85',
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/mercedes-cla-new.jpg',
     specs:{ engine:'1.3T M282', power:'163 כ"ס', accel:'8.2 שנ׳', trunk:'460 ל׳', fuel:'7.2 ל׳/100', maxSpeed:'234 קמ"ש (מוגבל)' },
     hi:['MBUX Superscreen 14.4″','AMG Line','Signature Edition','5 כוכבי EuroNCAP'],
     notes:'יד 2 ע"ש הלקוח',
@@ -666,7 +666,7 @@ const CARS = [
   { id:'smart-5', make:'Smart', model:'#5', nameHe:'סמארט #5',
     type:'electric', typeHe:'חשמלי', cat:'suv', catHe:'SUV חשמלי', seats:5, year:2024,
     priceFrom:232712, monthlyFrom:2396, dpFrom:9900,
-    img: IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/smart-5-new.jpg',
     specs:{ battery:'100 קוט"ש', range:'500+ ק"מ', power:'340-585 כ"ס', accel:'3.7 שנ׳ (BRABUS)', trunk:'490 ל׳', maxSpeed:'200 קמ"ש' },
     hi:['BRABUS Edition זמין','OTA Updates','מסך 13.0″','8295 Snapdragon'],
     variants:[
@@ -704,7 +704,7 @@ const CARS = [
   { id:'dongfeng-box', make:'Dongfeng', model:'Box', nameHe:'דונפנג בוקס',
     type:'electric', typeHe:'חשמלי', cat:'hatchback', catHe:'האצ׳בק עירוני', seats:5, year:2025,
     priceFrom:117900, monthlyFrom:1290, dpFrom:4900,
-    img: IMG.ev,
+    img: 'https://www.icar.co.il/_media/images/models/bgremoval/dongfeng-box-new.jpg',
     specs:{ battery:'42.3 קוט"ש', range:'310 ק"מ', power:'95 כ"ס', accel:'11.0 שנ׳', trunk:'228 ל׳', maxSpeed:'140 קמ"ש' },
     hi:['רכב עירוני חסכוני','310 ק"מ טווח','מסך 10.25″','קל לחנייה'],
     variants:[
