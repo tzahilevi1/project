@@ -841,7 +841,11 @@ button { font-family: var(--font); }
 .back-to-top svg { width: 18px; height: 18px; }
 
 
-/* UserWay button position handled in HTML */
+/* UserWay accessibility button — bottom right */
+#interdeal-dynamic-accessibility-btn {
+    top: auto !important;
+    bottom: 20px !important;
+}
 
 
 /* ============================================
