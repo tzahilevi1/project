@@ -1,4 +1,4 @@
-/* ============================================
+﻿/* ============================================
    FOX MOTORS — Luxury CSS
    ============================================ */
 
@@ -11,11 +11,11 @@
     --gray:        #666666;
     --gray-light:  #999999;
     --white:       #FFFFFF;
-    --off-white:   #F4F7F4;
-    --gold:        #2E7D52;
-    --gold-light:  #3DAA6F;
-    --gold-dark:   #1A5C3A;
-    --gold-subtle: rgba(46, 125, 82, 0.12);
+    --off-white:   #FFF8F0;
+    --gold:        #F07B00;
+    --gold-light:  #FF9A2E;
+    --gold-dark:   #C46800;
+    --gold-subtle: rgba(240, 123, 0, 0.12);
 
     --font: 'Heebo', -apple-system, sans-serif;
 
@@ -116,7 +116,7 @@ button { font-family: var(--font); }
     background: var(--gold-light);
     border-color: var(--gold-light);
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(46,125,82,0.45);
+    box-shadow: 0 8px 28px rgba(240, 123, 0,0.45);
 }
 .btn--outline {
     background: transparent;
@@ -155,7 +155,7 @@ button { font-family: var(--font); }
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 12px 0;
-    border-bottom: 1px solid rgba(46,125,82,0.12);
+    border-bottom: 1px solid rgba(240, 123, 0,0.12);
 }
 .header__inner {
     display: flex;
@@ -406,7 +406,7 @@ button { font-family: var(--font); }
 .service-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
-    border-color: rgba(46,125,82,0.12);
+    border-color: rgba(240, 123, 0,0.12);
 }
 .service-card:hover::after { transform: scaleX(1); }
 
@@ -442,7 +442,7 @@ button { font-family: var(--font); }
     position: absolute;
     top: -150px; right: -150px;
     width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(46,125,82,0.05) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(240, 123, 0,0.05) 0%, transparent 65%);
     pointer-events: none;
 }
 .why-us__inner {
@@ -471,13 +471,13 @@ button { font-family: var(--font); }
 .step__number {
     font-size: 52px;
     font-weight: 900;
-    color: rgba(46,125,82,0.12);
+    color: rgba(240, 123, 0,0.12);
     line-height: 1;
     flex-shrink: 0;
     width: 68px;
     transition: color var(--t);
 }
-.step:hover .step__number { color: rgba(46,125,82,0.35); }
+.step:hover .step__number { color: rgba(240, 123, 0,0.35); }
 .step__title {
     font-size: 18px;
     font-weight: 800;
@@ -511,7 +511,7 @@ button { font-family: var(--font); }
 }
 .car-card--featured {
     border-color: var(--gold);
-    box-shadow: 0 4px 32px rgba(46,125,82,0.18);
+    box-shadow: 0 4px 32px rgba(240, 123, 0,0.18);
 }
 .car-card__image {
     position: relative;
@@ -599,7 +599,7 @@ button { font-family: var(--font); }
 .testimonial-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-hover);
-    border-color: rgba(46,125,82,0.1);
+    border-color: rgba(240, 123, 0,0.1);
 }
 .testimonial-card::before {
     content: '"';
@@ -671,7 +671,7 @@ button { font-family: var(--font); }
     transition: all var(--t);
     cursor: default;
 }
-.bank-logo:hover { color: var(--gold); border-color: rgba(46,125,82,0.3); }
+.bank-logo:hover { color: var(--gold); border-color: rgba(240, 123, 0,0.3); }
 
 
 /* ============================================
@@ -687,7 +687,7 @@ button { font-family: var(--font); }
     position: absolute;
     bottom: -120px; left: -120px;
     width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(46,125,82,0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(240, 123, 0,0.05) 0%, transparent 70%);
     pointer-events: none;
 }
 .contact__inner {
@@ -753,8 +753,8 @@ button { font-family: var(--font); }
 .form-group textarea:focus {
     outline: none;
     border-color: var(--gold);
-    background: rgba(46,125,82,0.07);
-    box-shadow: 0 0 0 3px rgba(46,125,82,0.12);
+    background: rgba(240, 123, 0,0.07);
+    box-shadow: 0 0 0 3px rgba(240, 123, 0,0.12);
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder { color: rgba(255,255,255,0.22); }
@@ -892,3 +892,4 @@ button { font-family: var(--font); }
     .banks__logos { gap: 10px; }
     .bank-logo { font-size: 12px; padding: 8px 14px; }
 }
+

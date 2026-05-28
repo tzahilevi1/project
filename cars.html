@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="קטלוג הרכבים של פוקס מוטורס — 67 דגמים עם תנאי מימון מיוחדים. חשמליים, היברידיים, פלאג-אין ובנזין.">
+    <title>קטלוג רכבים | פוקס מוטורס</title>
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1tVQsU_5z76XtxymGgR3vCvmz2nPqQ4TK">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1tVQsU_5z76XtxymGgR3vCvmz2nPqQ4TK">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cars.css">
+    <script>
+      window.interdeal = { sitekey: "foxmotors", Position: "right", domains: { js: "https://cdn.userway.org/" }, btnStyle: { vPosition: ["80%",""], scale: ["0.8","0.8"], color: { main: "#F07B00", second: "#FFFFFF" } } };
+      (function(n,s,c){var po=n.createElement(s);po.type="text/javascript";po.async=true;po.src=c+"widget.js";var sp=n.getElementsByTagName(s)[0];sp.parentNode.insertBefore(po,sp);}(document,"script","https://cdn.userway.org/"));
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">
+                <img src="https://lh3.googleusercontent.com/d/1lTIHAy635doHl6WMLOM4Pqh6e-oLbMcb" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <span class="logo__fallback" style="display:none"><span class="logo__fox">FOX</span><span class="logo__motors">MOTORS</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html#services" class="nav__link">שירותים</a>
+                <a href="index.html#why-us" class="nav__link">השיטה שלנו</a>
+                <a href="cars.html" class="nav__link" style="color:var(--gold)">הרכבים שלנו</a>
+                <a href="index.html#testimonials" class="nav__link">המלצות</a>
+                <a href="index.html#contact" class="nav__link nav__link--cta">צור קשר</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="פתח תפריט">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#services" class="mobile-menu__link">שירותים</a>
+        <a href="index.html#why-us" class="mobile-menu__link">השיטה שלנו</a>
+        <a href="cars.html" class="mobile-menu__link">הרכבים שלנו</a>
+        <a href="index.html#testimonials" class="mobile-menu__link">המלצות</a>
+        <a href="index.html#contact" class="mobile-menu__link">צור קשר</a>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb fade-up" aria-label="ניווט">
+                <a href="index.html">ראשי</a>
+                <span>›</span>
+                <span>קטלוג רכבים</span>
+            </nav>
+            <p class="hero__tagline fade-up">הקטלוג שלנו</p>
+            <h1 class="page-hero__title fade-up">כל הרכבים שלנו</h1>
+            <p class="page-hero__subtitle fade-up">67 דגמים · תנאי מימון מיוחדים · מסירה מהירה</p>
+        </div>
+    </section>
+
+    <!-- Catalog -->
+    <section class="catalog section">
+        <div class="container">
+            <!-- Filter bar -->
+            <div class="catalog__filters fade-up">
+                <button class="filter-btn filter-btn--active" data-filter="all">הכל <span class="filter-count" id="count-all">67</span></button>
+                <button class="filter-btn" data-filter="electric">⚡ חשמלי <span class="filter-count" id="count-electric"></span></button>
+                <button class="filter-btn" data-filter="phev">🔌 פלאג-אין <span class="filter-count" id="count-phev"></span></button>
+                <button class="filter-btn" data-filter="hybrid">♻ היברידי <span class="filter-count" id="count-hybrid"></span></button>
+                <button class="filter-btn" data-filter="benzin">⛽ בנזין <span class="filter-count" id="count-benzin"></span></button>
+                <button class="filter-btn" data-filter="diesel">🛢 דיזל <span class="filter-count" id="count-diesel"></span></button>
+            </div>
+
+            <!-- Grid -->
+            <div class="catalog__grid" id="carsGrid"></div>
+            <div class="catalog__empty" id="catalogEmpty" style="display:none">לא נמצאו רכבים בקטגוריה זו</div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="catalog-cta">
+        <div class="container">
+            <div class="catalog-cta__inner fade-up">
+                <div class="catalog-cta__text">
+                    <h3>לא מצאתם את הרכב שחיפשתם?</h3>
+                    <p>צרו קשר ונמצא עבורכם את הרכב המושלם עם תנאי מימון מותאמים</p>
+                </div>
+                <div class="catalog-cta__btns">
+                    <a href="https://wa.me/972723305255" class="btn btn--primary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="index.html#contact" class="btn btn--outline-dark">שלחו פנייה</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="index.html" class="logo">
+                        <img src="https://lh3.googleusercontent.com/d/1lTIHAy635doHl6WMLOM4Pqh6e-oLbMcb" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <span class="logo__fallback" style="display:none"><span class="logo__fox">FOX</span><span class="logo__motors">MOTORS</span></span>
+                    </a>
+                    <p>מימון רכב חכם ומתקדם</p>
+                </div>
+                <div class="footer__links">
+                    <a href="index.html#services">שירותים</a>
+                    <a href="index.html#why-us">השיטה שלנו</a>
+                    <a href="cars.html">הרכבים שלנו</a>
+                    <a href="index.html#testimonials">המלצות</a>
+                    <a href="index.html#contact">צור קשר</a>
+                </div>
+                <div class="footer__contact">
+                    <a href="tel:0723305255">072-3305255</a>
+                    <span>הקורנס 5, חיפה</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2024 פוקס מוטורס. כל הזכויות שמורות.</p>
+                <p>המחירים כוללים מע"מ ומותנים באישור מימון</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/972723305255" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="פנו אלינו בוואטסאפ">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <button class="back-to-top" id="backToTop" aria-label="חזרה למעלה">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/cars-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    (function() {
+        const types = ['electric','phev','hybrid','benzin','diesel'];
+        types.forEach(function(t) {
+            var count = CARS.filter(function(c){ return c.type === t; }).length;
+            var el = document.getElementById('count-' + t);
+            if (el) el.textContent = count;
+        });
+
+        var fallbackImg = 'https://images.unsplash.com/photo-1512699355324-f07e3106dae5?w=800';
+
+        function carCard(car) {
+            var saleTag = car.salePrice ? '<span class="cc-sale">מבצע</span>' : '';
+            var hi = car.hi.slice(0,3).map(function(h){ return '<li>' + h + '</li>'; }).join('');
+            return '<a href="car.html?id=' + car.id + '" class="cc">' +
+                '<div class="cc__img">' +
+                    '<img src="' + car.img + '" alt="' + car.nameHe + '" loading="lazy" onerror="this.src=\'' + fallbackImg + '\'">' +
+                    '<span class="cc-type cc-type--' + car.type + '">' + car.typeHe + '</span>' +
+                    saleTag +
+                '</div>' +
+                '<div class="cc__body">' +
+                    '<div class="cc__top">' +
+                        '<span class="cc__make">' + car.make + '</span>' +
+                        '<span class="cc__year">' + car.year + '</span>' +
+                    '</div>' +
+                    '<h3 class="cc__name">' + car.nameHe + '</h3>' +
+                    '<p class="cc__cat">' + car.catHe + '</p>' +
+                    '<div class="cc__price">' +
+                        '<span class="cc__from">מ-</span>' +
+                        '<span class="cc__monthly">₪' + car.monthlyFrom.toLocaleString() + '</span>' +
+                        '<span class="cc__period">/חודש</span>' +
+                    '</div>' +
+                    '<ul class="cc__hi">' + hi + '</ul>' +
+                '</div>' +
+            '</a>';
+        }
+
+        function render(filter) {
+            var grid = document.getElementById('carsGrid');
+            var empty = document.getElementById('catalogEmpty');
+            var list = filter === 'all' ? CARS : CARS.filter(function(c){ return c.type === filter; });
+            if (!list.length) {
+                grid.innerHTML = '';
+                empty.style.display = 'block';
+                return;
+            }
+            empty.style.display = 'none';
+            grid.innerHTML = list.map(carCard).join('');
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('filter-btn--active'); });
+                btn.classList.add('filter-btn--active');
+                render(btn.dataset.filter);
+            });
+        });
+
+        render('all');
+    })();
+    </script>
+</body>
+</html>
