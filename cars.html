@@ -232,11 +232,14 @@
             document.getElementById('brandGrid').appendChild(btn);
         });
 
+        /* Debounce slider so grid updates only after user stops dragging */
+        var sliderTimer;
         slider.addEventListener('input', function() {
             state.maxPrice = parseInt(this.value);
             document.getElementById('priceValue').textContent =
                 state.maxPrice >= parseInt(this.max) ? 'ללא הגבלה' : '₪'+state.maxPrice.toLocaleString();
-            update();
+            clearTimeout(sliderTimer);
+            sliderTimer = setTimeout(update, 200);
         });
 
         ['engineFilters','catFilters','seatsFilters'].forEach(function(id) {
@@ -333,15 +336,12 @@
     })();
     </script>
     <script>
-    /* Force UserWay accessibility button to bottom-right */
-    (function(){
-        var SEL=['[id*="interdeal"]','[id*="userway"]','[class*="userway"]','[class*="interdeal"]'];
-        function fix(){SEL.forEach(function(s){document.querySelectorAll(s).forEach(function(el){var p=window.getComputedStyle(el).position;if(p==='fixed'||p==='absolute'){el.style.cssText=el.style.cssText.replace(/\btop\s*:[^;!]+!?\s*important\s*;?/gi,'').replace(/\btop\s*:[^;]+;?/gi,'');el.style.setProperty('top','auto','important');el.style.setProperty('bottom','24px','important');el.style.setProperty('transform','none','important');}});});}
-        var n=0,iv=setInterval(function(){fix();if(++n>50)clearInterval(iv);},300);
-        new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes')fix();});fix();}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});
-    })();
+    /* Fix UserWay button to bottom-right — simple one-time fix */
+    function fixA11yBtn(){['[id*="interdeal"]','[id*="userway"]'].forEach(function(s){document.querySelectorAll(s).forEach(function(el){if(window.getComputedStyle(el).position==='fixed'){el.style.top='auto';el.style.bottom='24px';}});});}
+    setTimeout(fixA11yBtn,800);setTimeout(fixA11yBtn,2500);
     </script>
 </body>
 </html>
+
 
 
