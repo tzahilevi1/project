@@ -841,6 +841,18 @@ button { font-family: var(--font); }
 .back-to-top svg { width: 18px; height: 18px; }
 
 
+/* ---- UserWay Accessibility Button — force bottom-right ---- */
+#interdeal-dynamic-accessibility-btn,
+.interdeal-accessibility-btn,
+[id^="interdeal"],
+.userway-btn,
+#userway-btn {
+    top: auto !important;
+    bottom: 24px !important;
+    transform: none !important;
+}
+
+
 /* ============================================
    ANIMATIONS
    ============================================ */

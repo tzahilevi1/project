@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Accessibility widget -->
     <script>
-      window.interdeal = { sitekey: "foxmotors", Position: "right", domains: { js: "https://cdn.userway.org/" }, btnStyle: { vPosition: ["","4%"], scale: ["0.55","0.55"], color: { main: "#F07B00", second: "#FFFFFF" } } };
+      window.interdeal = { sitekey: "foxmotors", Position: "right", domains: { js: "https://cdn.userway.org/" }, btnStyle: { vPosition: ["","24px"], scale: ["0.55","0.55"], color: { main: "#F07B00", second: "#FFFFFF" } } };
       (function(n,s,c){var po=n.createElement(s);po.type="text/javascript";po.async=true;po.src=c+"widget.js";var sp=n.getElementsByTagName(s)[0];sp.parentNode.insertBefore(po,sp);}(document,"script","https://cdn.userway.org/"));
     </script>
 </head>
@@ -413,6 +413,29 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script>
+    /* Force accessibility widget to bottom-right */
+    (function(){
+        function fix(){
+            var el=document.getElementById('interdeal-dynamic-accessibility-btn')||
+                   document.querySelector('[id*="interdeal-dynamic"]')||
+                   document.querySelector('[class*="userway-btn"]');
+            if(el){
+                el.style.setProperty('top','auto','important');
+                el.style.setProperty('bottom','24px','important');
+                el.style.setProperty('transform','none','important');
+                return true;
+            }
+            return false;
+        }
+        if(!fix()){
+            var ob=new MutationObserver(function(){if(fix())ob.disconnect();});
+            ob.observe(document.body||document.documentElement,{childList:true,subtree:true});
+        }
+    })();
+    </script>
 </body>
 </html>
+
+
 
