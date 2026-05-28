@@ -1,13 +1,13 @@
-// Fox Motors — Cars Inventory
+﻿// Fox Motors — Cars Inventory
 const D = id => id ? `https://lh3.googleusercontent.com/d/${id}` : null;
 const IMG = {
-  suv:     'https://images.unsplash.com/photo-1512699355324-f07e3106dae5?w=800',
-  sedan:   'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800',
-  ev:      'https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800',
-  bmw:     'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800',
-  merz:    'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800',
-  pickup:  'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800',
-  compact: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800',
+  suv:     'https://images.unsplash.com/photo-1512699355324-f07e3106dae5?auto=format&fit=crop&w=900&q=85',
+  sedan:   'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=85',
+  ev:      'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=900&q=85',
+  bmw:     'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=85',
+  merz:    'https://images.unsplash.com/photo-1570733577524-3a047079e80d?auto=format&fit=crop&w=900&q=85',
+  pickup:  'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=900&q=85',
+  compact: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=85',
 };
 
 const CARS = [
@@ -626,7 +626,7 @@ const CARS = [
   { id:'mercedes-gla200', make:'Mercedes', model:'GLA 200', nameHe:'מרצדס GLA 200',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV קומפקטי פרמיום', seats:5, year:2024,
     priceFrom:365000, monthlyFrom:3699, dpFrom:0,
-    img: IMG.merz,
+    img: 'https://images.unsplash.com/photo-1570733577524-3a047079e80d?auto=format&fit=crop&w=900&q=85',
     specs:{ engine:'1.3T M282', power:'163 כ"ס', accel:'8.7 שנ׳', trunk:'435 ל׳', fuel:'7.5 ל׳/100', maxSpeed:'230 קמ"ש (מוגבל)' },
     hi:['MBUX Voice Assistant','מסך 10.25″ + 10.25″','AMG Line זמין','5 כוכבי EuroNCAP'],
     variants:[
@@ -635,7 +635,7 @@ const CARS = [
   { id:'mercedes-glc200', make:'Mercedes', model:'GLC 200', nameHe:'מרצדס GLC 200',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV בינוני פרמיום', seats:5, year:2024,
     priceFrom:479000, salePrice:479000, monthlyFrom:4806, dpFrom:0,
-    img: IMG.merz,
+    img: 'https://images.unsplash.com/photo-1616788494672-ec7ca25fdda9?auto=format&fit=crop&w=900&q=85',
     specs:{ engine:'2.0T M254', power:'204 כ"ס', accel:'7.5 שנ׳', trunk:'575 ל׳', fuel:'7.8 ל׳/100', maxSpeed:'234 קמ"ש (מוגבל)' },
     hi:['MBUX Superscreen','4MATIC AWD זמין','AMG Line','5 כוכבי EuroNCAP'],
     notes:'אספקה יוני-יולי',
@@ -645,7 +645,7 @@ const CARS = [
   { id:'mercedes-glc300-coupe', make:'Mercedes', model:'GLC 300 Coupé', nameHe:'מרצדס GLC 300 קופה',
     type:'benzin', typeHe:'בנזין', cat:'suv', catHe:'SUV קופה פרמיום', seats:5, year:2024,
     priceFrom:559000, monthlyFrom:5724, dpFrom:0,
-    img: IMG.merz,
+    img: 'https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=85',
     specs:{ engine:'2.0T M254', power:'258 כ"ס', accel:'6.4 שנ׳', trunk:'510 ל׳', fuel:'8.5 ל׳/100', maxSpeed:'240 קמ"ש (מוגבל)' },
     hi:['AMG Line','MBUX 12.3″ Dual','4MATIC xDrive','Burmester Audio'],
     variants:[
@@ -654,7 +654,7 @@ const CARS = [
   { id:'mercedes-cla200', make:'Mercedes', model:'CLA 200', nameHe:'מרצדס CLA 200',
     type:'benzin', typeHe:'בנזין', cat:'sedan', catHe:'סדאן קופה פרמיום', seats:5, year:2024,
     priceFrom:409900, salePrice:409900, monthlyFrom:3999, dpFrom:0,
-    img: IMG.merz,
+    img: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=85',
     specs:{ engine:'1.3T M282', power:'163 כ"ס', accel:'8.2 שנ׳', trunk:'460 ל׳', fuel:'7.2 ל׳/100', maxSpeed:'234 קמ"ש (מוגבל)' },
     hi:['MBUX Superscreen 14.4″','AMG Line','Signature Edition','5 כוכבי EuroNCAP'],
     notes:'יד 2 ע"ש הלקוח',
@@ -740,3 +740,4 @@ const CARS = [
       { name:'A3 Sedan S-LINE LUX', eng:'בנזין 2.0T', price:290000, salePrice:279900, m50:3526, m60:2999, fee:7000, dp:9900, colors:'לבן, אפור, שחור' }
     ]}
 ];
+

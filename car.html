@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cars.css">
     <script>
-      window.interdeal = { sitekey: "foxmotors", Position: "right", domains: { js: "https://cdn.userway.org/" }, btnStyle: { vPosition: ["80%",""], scale: ["0.8","0.8"], color: { main: "#F07B00", second: "#FFFFFF" } } };
+      window.interdeal = { sitekey: "foxmotors", Position: "right", domains: { js: "https://cdn.userway.org/" }, btnStyle: { vPosition: ["","4%"], scale: ["0.55","0.55"], color: { main: "#F07B00", second: "#FFFFFF" } } };
       (function(n,s,c){var po=n.createElement(s);po.type="text/javascript";po.async=true;po.src=c+"widget.js";var sp=n.getElementsByTagName(s)[0];sp.parentNode.insertBefore(po,sp);}(document,"script","https://cdn.userway.org/"));
     </script>
 </head>
@@ -23,7 +23,7 @@
     <header class="header" id="header">
         <div class="container header__inner">
             <a href="index.html" class="logo">
-                <img src="https://lh3.googleusercontent.com/d/1lTIHAy635doHl6WMLOM4Pqh6e-oLbMcb" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <img src="https://lh3.googleusercontent.com/d/1mdY6iS8PFof6jDd0CWzzNV2S1Uv_Mk8E" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                 <span class="logo__fallback" style="display:none"><span class="logo__fox">FOX</span><span class="logo__motors">MOTORS</span></span>
             </a>
             <nav class="nav" id="nav">
@@ -121,7 +121,6 @@
                                         <th>ד"מ 60%</th>
                                         <th>ד"מ 50%</th>
                                         <th>מקדמה</th>
-                                        <th>עמלת סוכן</th>
                                     </tr>
                                 </thead>
                                 <tbody id="variantsBody"></tbody>
@@ -157,7 +156,7 @@
             <div class="footer__inner">
                 <div class="footer__brand">
                     <a href="index.html" class="logo">
-                        <img src="https://lh3.googleusercontent.com/d/1lTIHAy635doHl6WMLOM4Pqh6e-oLbMcb" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <img src="https://lh3.googleusercontent.com/d/1mdY6iS8PFof6jDd0CWzzNV2S1Uv_Mk8E" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <span class="logo__fallback" style="display:none"><span class="logo__fox">FOX</span><span class="logo__motors">MOTORS</span></span>
                     </a>
                     <p>מימון רכב חכם ומתקדם</p>
@@ -279,7 +278,6 @@
                 '<td class="monthly-col">' + (v.m60 ? '₪' + v.m60.toLocaleString() : '—') + '</td>' +
                 '<td class="monthly-col">' + (v.m50 ? '₪' + v.m50.toLocaleString() : '—') + '</td>' +
                 '<td>' + (v.dp !== undefined && v.dp !== null ? '₪' + v.dp.toLocaleString() : '—') + '</td>' +
-                '<td>' + (v.fee ? '₪' + v.fee.toLocaleString() : '—') + '</td>' +
             '</tr>';
         }).join('');
 
@@ -323,3 +321,4 @@
     </script>
 </body>
 </html>
+

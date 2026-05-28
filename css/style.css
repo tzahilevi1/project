@@ -165,7 +165,7 @@ button { font-family: var(--font); }
 
 /* Logo */
 .logo { display: flex; align-items: center; }
-.logo__img { height: 44px; width: auto; object-fit: contain; }
+.logo__img { height: 56px; width: auto; object-fit: contain; filter: drop-shadow(0 0 6px rgba(255,255,255,0.18)) drop-shadow(0 1px 4px rgba(0,0,0,0.5)); }
 .logo__fallback { display: flex; flex-direction: column; gap: 1px; }
 .logo__fox    { font-size: 22px; font-weight: 900; color: var(--gold); letter-spacing: 5px; }
 .logo__motors { font-size: 9px;  font-weight: 400; color: rgba(255,255,255,0.55); letter-spacing: 5px; }
@@ -892,4 +892,5 @@ button { font-family: var(--font); }
     .banks__logos { gap: 10px; }
     .bank-logo { font-size: 12px; padding: 8px 14px; }
 }
+
 
