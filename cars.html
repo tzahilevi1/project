@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -39,7 +39,6 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="index.html#services" class="mobile-menu__link">שירותים</a>
         <a href="index.html#why-us" class="mobile-menu__link">השיטה שלנו</a>
@@ -49,35 +48,75 @@
     </div>
 
     <!-- Page Hero -->
-    <section class="page-hero">
+    <section class="page-hero page-hero--sm">
         <div class="container">
-            <nav class="breadcrumb fade-up" aria-label="ניווט">
-                <a href="index.html">ראשי</a>
-                <span>›</span>
-                <span>קטלוג רכבים</span>
-            </nav>
-            <p class="hero__tagline fade-up">הקטלוג שלנו</p>
+            <nav class="breadcrumb fade-up"><a href="index.html">ראשי</a><span>›</span><span>קטלוג רכבים</span></nav>
             <h1 class="page-hero__title fade-up">כל הרכבים שלנו</h1>
             <p class="page-hero__subtitle fade-up">67 דגמים · תנאי מימון מיוחדים · מסירה מהירה</p>
         </div>
     </section>
 
+    <!-- Mobile sidebar overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
     <!-- Catalog -->
     <section class="catalog section">
         <div class="container">
-            <!-- Filter bar -->
-            <div class="catalog__filters fade-up">
-                <button class="filter-btn filter-btn--active" data-filter="all">הכל <span class="filter-count" id="count-all">67</span></button>
-                <button class="filter-btn" data-filter="electric">⚡ חשמלי <span class="filter-count" id="count-electric"></span></button>
-                <button class="filter-btn" data-filter="phev">🔌 פלאג-אין <span class="filter-count" id="count-phev"></span></button>
-                <button class="filter-btn" data-filter="hybrid">♻ היברידי <span class="filter-count" id="count-hybrid"></span></button>
-                <button class="filter-btn" data-filter="benzin">⛽ בנזין <span class="filter-count" id="count-benzin"></span></button>
-                <button class="filter-btn" data-filter="diesel">🛢 דיזל <span class="filter-count" id="count-diesel"></span></button>
+
+            <div class="catalog-topbar fade-up">
+                <span id="resultsCount">67 רכבים</span>
+                <button class="mobile-filter-btn" id="mobileFilterBtn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+                    סינון
+                </button>
             </div>
 
-            <!-- Grid -->
-            <div class="catalog__grid" id="carsGrid"></div>
-            <div class="catalog__empty" id="catalogEmpty" style="display:none">לא נמצאו רכבים בקטגוריה זו</div>
+            <div class="catalog-layout">
+
+                <!-- Sidebar (RTL = right side) -->
+                <aside class="catalog-sidebar" id="catalogSidebar">
+                    <div class="sidebar-inner">
+
+                        <div class="filter-block">
+                            <h4 class="filter-title">החזר חודשי עד:</h4>
+                            <input type="range" class="price-slider" id="priceSlider" min="1000" max="8000" value="8000" step="100">
+                            <div class="price-display">
+                                <span>₪1,000</span>
+                                <span class="price-current" id="priceValue">ללא הגבלה</span>
+                            </div>
+                        </div>
+
+                        <div class="filter-block">
+                            <h4 class="filter-title">סוג הנעה:</h4>
+                            <div id="engineFilters"></div>
+                        </div>
+
+                        <div class="filter-block">
+                            <h4 class="filter-title">קטגוריית רכב:</h4>
+                            <div id="catFilters"></div>
+                        </div>
+
+                        <div class="filter-block">
+                            <h4 class="filter-title">מספר מושבים:</h4>
+                            <div id="seatsFilters"></div>
+                        </div>
+
+                        <div class="filter-block">
+                            <h4 class="filter-title">יצרן:</h4>
+                            <div class="brand-grid" id="brandGrid"></div>
+                        </div>
+
+                        <button class="clear-btn" id="clearFilters">× נקה כל הסינונים</button>
+                    </div>
+                </aside>
+
+                <!-- Cars grid -->
+                <div class="catalog-main">
+                    <div class="catalog__grid" id="carsGrid"></div>
+                    <div class="catalog__empty" id="catalogEmpty" style="display:none">לא נמצאו רכבים עם הסינון הנוכחי</div>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -127,7 +166,6 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
     <a href="https://wa.me/972723305255" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="פנו אלינו בוואטסאפ">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
@@ -140,96 +178,133 @@
     <script src="js/main.js"></script>
     <script>
     (function() {
-        const types = ['electric','phev','hybrid','benzin','diesel'];
-        types.forEach(function(t) {
-            var count = CARS.filter(function(c){ return c.type === t; }).length;
-            var el = document.getElementById('count-' + t);
-            if (el) el.textContent = count;
+        var FALLBACK = 'https://images.unsplash.com/photo-1512699355324-f07e3106dae5?w=800';
+        var state = { maxPrice: 99999, engines: [], cats: [], seats: [], brands: [] };
+
+        var maxP = Math.ceil(Math.max.apply(null, CARS.map(function(c){ return c.monthlyFrom; })) / 500) * 500;
+        var slider = document.getElementById('priceSlider');
+        slider.max = maxP; slider.value = maxP; state.maxPrice = maxP;
+
+        function buildChecks(containerId, defs, ftype, countFn) {
+            var el = document.getElementById(containerId);
+            defs.forEach(function(d) {
+                var n = countFn(d.v);
+                if (!n) return;
+                var lbl = document.createElement('label');
+                lbl.className = 'filter-check';
+                lbl.innerHTML = '<input type="checkbox" data-ftype="'+ftype+'" value="'+d.v+'"> '+d.l+' <span class="filter-cnt">'+n+'</span>';
+                el.appendChild(lbl);
+            });
+        }
+
+        buildChecks('engineFilters',[
+            {v:'electric',l:'⚡ חשמלי'},{v:'phev',l:'🔌 פלאג-אין'},
+            {v:'hybrid',l:'♻ היברידי'},{v:'benzin',l:'⛽ בנזין'},{v:'diesel',l:'🛢 דיזל'}
+        ],'engine',function(v){ return CARS.filter(function(c){ return c.type===v; }).length; });
+
+        buildChecks('catFilters',[
+            {v:'suv',l:'SUV / קרוסאובר'},{v:'sedan',l:'סדאן'},
+            {v:'hatchback',l:"האצ'בק"},{v:'coupe',l:'קופה'},
+            {v:'pickup',l:'פיקאפ'},{v:'minivan',l:'מיניוואן'}
+        ],'cat',function(v){ return CARS.filter(function(c){ return c.cat===v; }).length; });
+
+        buildChecks('seatsFilters',[
+            {v:'5',l:'5 מושבים'},{v:'7',l:'7 מושבים'}
+        ],'seats',function(v){ return CARS.filter(function(c){ return String(c.seats)===v; }).length; });
+
+        var brandCount = {};
+        CARS.forEach(function(c){ brandCount[c.make]=(brandCount[c.make]||0)+1; });
+        Object.keys(brandCount).sort(function(a,b){ return brandCount[b]-brandCount[a]; }).forEach(function(b) {
+            var btn = document.createElement('button');
+            btn.className = 'brand-btn'; btn.textContent = b; btn.title = b+' ('+brandCount[b]+')';
+            btn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                state.brands = this.classList.contains('active')
+                    ? state.brands.concat([b])
+                    : state.brands.filter(function(x){ return x!==b; });
+                update();
+            });
+            document.getElementById('brandGrid').appendChild(btn);
         });
 
-        var fallbackImg = 'https://images.unsplash.com/photo-1512699355324-f07e3106dae5?w=800';
+        slider.addEventListener('input', function() {
+            state.maxPrice = parseInt(this.value);
+            document.getElementById('priceValue').textContent =
+                state.maxPrice >= parseInt(this.max) ? 'ללא הגבלה' : '₪'+state.maxPrice.toLocaleString();
+            update();
+        });
+
+        ['engineFilters','catFilters','seatsFilters'].forEach(function(id) {
+            document.getElementById(id).addEventListener('change', function(e) {
+                if (e.target.type !== 'checkbox') return;
+                var key = {engine:'engines',cat:'cats',seats:'seats'}[e.target.dataset.ftype];
+                if (e.target.checked) state[key].push(e.target.value);
+                else state[key] = state[key].filter(function(x){ return x!==e.target.value; });
+                update();
+            });
+        });
+
+        document.getElementById('clearFilters').addEventListener('click', function() {
+            state.engines=[]; state.cats=[]; state.seats=[]; state.brands=[];
+            state.maxPrice = parseInt(slider.max); slider.value = slider.max;
+            document.getElementById('priceValue').textContent = 'ללא הגבלה';
+            document.querySelectorAll('[data-ftype]').forEach(function(cb){ cb.checked=false; });
+            document.querySelectorAll('.brand-btn.active').forEach(function(b){ b.classList.remove('active'); });
+            update();
+        });
+
+        var sidebar = document.getElementById('catalogSidebar');
+        var overlay = document.getElementById('sidebarOverlay');
+        document.getElementById('mobileFilterBtn').addEventListener('click', function() {
+            sidebar.classList.add('open'); overlay.classList.add('active'); document.body.style.overflow='hidden';
+        });
+        overlay.addEventListener('click', function() {
+            sidebar.classList.remove('open'); overlay.classList.remove('active'); document.body.style.overflow='';
+        });
 
         function carCard(car) {
-            var saleTag = car.salePrice ? '<span class="cc-sale">מבצע</span>' : '';
-            var hi = car.hi.slice(0,3).map(function(h){ return '<li>' + h + '</li>'; }).join('');
-            return '<a href="car.html?id=' + car.id + '" class="cc">' +
-                '<div class="cc__img">' +
-                    '<img src="' + car.img + '" alt="' + car.nameHe + '" loading="lazy" onerror="this.src=\'' + fallbackImg + '\'">' +
-                    '<span class="cc-type cc-type--' + car.type + '">' + car.typeHe + '</span>' +
-                    saleTag +
-                '</div>' +
-                '<div class="cc__body">' +
-                    '<div class="cc__top">' +
-                        '<span class="cc__make">' + car.make + '</span>' +
-                        '<span class="cc__year">' + car.year + '</span>' +
-                    '</div>' +
-                    '<h3 class="cc__name">' + car.nameHe + '</h3>' +
-                    '<p class="cc__cat">' + car.catHe + '</p>' +
-                    '<div class="cc__price">' +
-                        '<span class="cc__from">מ-</span>' +
-                        '<span class="cc__monthly">₪' + car.monthlyFrom.toLocaleString() + '</span>' +
-                        '<span class="cc__period">/חודש</span>' +
-                    '</div>' +
-                    '<ul class="cc__hi">' + hi + '</ul>' +
-                '</div>' +
+            var sale = car.salePrice ? '<span class="cc-sale-tag">מבצע</span>' : '';
+            return '<a href="car.html?id='+car.id+'" class="cc">'+
+                '<div class="cc__img-wrap">'+sale+
+                    '<span class="cc-type-tag cc-type-tag--'+car.type+'">'+car.typeHe+'</span>'+
+                    '<img src="'+car.img+'" alt="'+car.nameHe+'" loading="lazy" onerror="this.src=\''+FALLBACK+'\'">'+
+                '</div>'+
+                '<div class="cc__body">'+
+                    '<div class="cc__brand">'+car.make+'</div>'+
+                    '<h3 class="cc__name">'+car.nameHe+'</h3>'+
+                    '<p class="cc__cat-line">'+car.catHe+(car.seats===7?' · 7 מושבים':'')+'</p>'+
+                    '<div class="cc__price-line">החזר חודשי החל מ:<strong>₪'+car.monthlyFrom.toLocaleString()+'</strong></div>'+
+                    '<span class="cc__btn">פרטים נוספים</span>'+
+                '</div>'+
             '</a>';
         }
 
-        function render(filter) {
-            var grid = document.getElementById('carsGrid');
-            var empty = document.getElementById('catalogEmpty');
-            var list = filter === 'all' ? CARS : CARS.filter(function(c){ return c.type === filter; });
-            if (!list.length) {
-                grid.innerHTML = '';
-                empty.style.display = 'block';
-                return;
-            }
-            empty.style.display = 'none';
-            grid.innerHTML = list.map(carCard).join('');
+        function update() {
+            var filtered = CARS.filter(function(car) {
+                if (car.monthlyFrom > state.maxPrice) return false;
+                if (state.engines.length && state.engines.indexOf(car.type)<0) return false;
+                if (state.cats.length && state.cats.indexOf(car.cat)<0) return false;
+                if (state.seats.length && state.seats.indexOf(String(car.seats))<0) return false;
+                if (state.brands.length && state.brands.indexOf(car.make)<0) return false;
+                return true;
+            });
+            document.getElementById('resultsCount').textContent = filtered.length+' רכבים';
+            var grid=document.getElementById('carsGrid'), empty=document.getElementById('catalogEmpty');
+            if (!filtered.length) { grid.innerHTML=''; empty.style.display='block'; }
+            else { empty.style.display='none'; grid.innerHTML=filtered.map(carCard).join(''); }
         }
 
-        document.querySelectorAll('.filter-btn').forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('filter-btn--active'); });
-                btn.classList.add('filter-btn--active');
-                render(btn.dataset.filter);
-            });
-        });
-
-        render('all');
+        update();
     })();
     </script>
     <script>
-    /* Force UserWay accessibility button to bottom-right — aggressive fix */
+    /* Force UserWay accessibility button to bottom-right */
     (function(){
         var SEL=['[id*="interdeal"]','[id*="userway"]','[class*="userway"]','[class*="interdeal"]'];
-        function applyFix(){
-            SEL.forEach(function(s){
-                document.querySelectorAll(s).forEach(function(el){
-                    var pos=window.getComputedStyle(el).position;
-                    if(pos==='fixed'||pos==='absolute'){
-                        el.style.cssText=el.style.cssText
-                            .replace(/\btop\s*:[^;!]+!?\s*important\s*;?/gi,'')
-                            .replace(/\btop\s*:[^;]+;?/gi,'');
-                        el.style.setProperty('top','auto','important');
-                        el.style.setProperty('bottom','24px','important');
-                        el.style.setProperty('transform','none','important');
-                    }
-                });
-            });
-        }
-        /* Run every 300ms for first 15s to catch UserWay resets */
-        var n=0,iv=setInterval(function(){applyFix();if(++n>50)clearInterval(iv);},300);
-        /* Also watch style/class attribute changes */
-        new MutationObserver(function(ms){
-            ms.forEach(function(m){if(m.type==='attributes')applyFix();});
-            applyFix();
-        }).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});
+        function fix(){SEL.forEach(function(s){document.querySelectorAll(s).forEach(function(el){var p=window.getComputedStyle(el).position;if(p==='fixed'||p==='absolute'){el.style.cssText=el.style.cssText.replace(/\btop\s*:[^;!]+!?\s*important\s*;?/gi,'').replace(/\btop\s*:[^;]+;?/gi,'');el.style.setProperty('top','auto','important');el.style.setProperty('bottom','24px','important');el.style.setProperty('transform','none','important');}});});}
+        var n=0,iv=setInterval(function(){fix();if(++n>50)clearInterval(iv);},300);
+        new MutationObserver(function(ms){ms.forEach(function(m){if(m.type==='attributes')fix();});fix();}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});
     })();
     </script>
 </body>
 </html>
-
-
-
-
