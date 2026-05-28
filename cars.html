@@ -7,6 +7,8 @@
     <title>קטלוג רכבים | פוקס מוטורס</title>
     <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1tVQsU_5z76XtxymGgR3vCvmz2nPqQ4TK">
     <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1tVQsU_5z76XtxymGgR3vCvmz2nPqQ4TK">
+    <link rel="preconnect" href="https://www.icar.co.il">
+    <link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,7 +25,7 @@
     <header class="header" id="header">
         <div class="container header__inner">
             <a href="index.html" class="logo">
-                <img src="https://lh3.googleusercontent.com/d/1mdY6iS8PFof6jDd0CWzzNV2S1Uv_Mk8E" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <img src="https://lh3.googleusercontent.com/d/1mdY6iS8PFof6jDd0CWzzNV2S1Uv_Mk8E" alt="פוקס מוטורס" decoding="async" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                 <span class="logo__fallback" style="display:none"><span class="logo__fox">FOX</span><span class="logo__motors">MOTORS</span></span>
             </a>
             <nav class="nav" id="nav">
@@ -114,6 +116,9 @@
                 <div class="catalog-main">
                     <div class="catalog__grid" id="carsGrid"></div>
                     <div class="catalog__empty" id="catalogEmpty" style="display:none">לא נמצאו רכבים עם הסינון הנוכחי</div>
+                    <div class="load-more-wrap" id="loadMoreWrap" style="display:none;text-align:center;padding:32px 0">
+                        <button class="btn btn--outline-dark" id="loadMoreBtn">טען עוד רכבים <span id="loadMoreCount"></span></button>
+                    </div>
                 </div>
 
             </div>
@@ -142,7 +147,7 @@
             <div class="footer__inner">
                 <div class="footer__brand">
                     <a href="index.html" class="logo">
-                        <img src="https://lh3.googleusercontent.com/d/1mdY6iS8PFof6jDd0CWzzNV2S1Uv_Mk8E" alt="פוקס מוטורס" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <img src="https://lh3.googleusercontent.com/d/1mdY6iS8PFof6jDd0CWzzNV2S1Uv_Mk8E" alt="פוקס מוטורס" decoding="async" class="logo__img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                         <span class="logo__fallback" style="display:none"><span class="logo__fox">FOX</span><span class="logo__motors">MOTORS</span></span>
                     </a>
                     <p>מימון רכב חכם ומתקדם</p>
@@ -262,12 +267,17 @@
             sidebar.classList.remove('open'); overlay.classList.remove('active'); document.body.style.overflow='';
         });
 
+        /* ---- Pagination ---- */
+        var PAGE = 20;
+        var page = 0;
+        var lastFiltered = [];
+
         function carCard(car) {
             var sale = car.salePrice ? '<span class="cc-sale-tag">מבצע</span>' : '';
             return '<a href="car.html?id='+car.id+'" class="cc">'+
                 '<div class="cc__img-wrap">'+sale+
                     '<span class="cc-type-tag cc-type-tag--'+car.type+'">'+car.typeHe+'</span>'+
-                    '<img src="'+car.img+'" alt="'+car.nameHe+'" loading="lazy" onerror="this.src=\''+FALLBACK+'\'">'+
+                    '<img src="'+car.img+'" alt="'+car.nameHe+'" loading="lazy" decoding="async" width="240" height="155" onerror="this.src=\''+FALLBACK+'\'">'+
                 '</div>'+
                 '<div class="cc__body">'+
                     '<div class="cc__brand">'+car.make+'</div>'+
@@ -279,8 +289,19 @@
             '</a>';
         }
 
+        function showLoadMore() {
+            var wrap = document.getElementById('loadMoreWrap');
+            var remaining = lastFiltered.length - (page + 1) * PAGE;
+            if (remaining > 0) {
+                wrap.style.display = 'block';
+                document.getElementById('loadMoreCount').textContent = '(' + Math.min(remaining, PAGE) + ')';
+            } else {
+                wrap.style.display = 'none';
+            }
+        }
+
         function update() {
-            var filtered = CARS.filter(function(car) {
+            lastFiltered = CARS.filter(function(car) {
                 if (car.monthlyFrom > state.maxPrice) return false;
                 if (state.engines.length && state.engines.indexOf(car.type)<0) return false;
                 if (state.cats.length && state.cats.indexOf(car.cat)<0) return false;
@@ -288,11 +309,25 @@
                 if (state.brands.length && state.brands.indexOf(car.make)<0) return false;
                 return true;
             });
-            document.getElementById('resultsCount').textContent = filtered.length+' רכבים';
+            page = 0;
+            document.getElementById('resultsCount').textContent = lastFiltered.length+' רכבים';
             var grid=document.getElementById('carsGrid'), empty=document.getElementById('catalogEmpty');
-            if (!filtered.length) { grid.innerHTML=''; empty.style.display='block'; }
-            else { empty.style.display='none'; grid.innerHTML=filtered.map(carCard).join(''); }
+            if (!lastFiltered.length) {
+                grid.innerHTML=''; empty.style.display='block';
+                document.getElementById('loadMoreWrap').style.display='none';
+            } else {
+                empty.style.display='none';
+                grid.innerHTML = lastFiltered.slice(0, PAGE).map(carCard).join('');
+                showLoadMore();
+            }
         }
+
+        document.getElementById('loadMoreBtn').addEventListener('click', function() {
+            page++;
+            var next = lastFiltered.slice(page * PAGE, (page + 1) * PAGE);
+            document.getElementById('carsGrid').insertAdjacentHTML('beforeend', next.map(carCard).join(''));
+            showLoadMore();
+        });
 
         update();
     })();
@@ -308,4 +343,5 @@
     </script>
 </body>
 </html>
+
 
