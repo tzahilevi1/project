@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "israeli-paid-ads": {
+      "source": "skills-il/marketing-growth",
+      "sourceType": "github",
+      "computedHash": "3dd69cce139d061e0fb302e93fc32294fae1571612e3375700fcb8aab89cc0cf"
+    }
+  }
+}
